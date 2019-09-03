@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: darkslategray;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header > div {
+    flex-basis: 1px;
+    flex: 1;
+}
+
+.header-menu {
+    padding-left: 1rem;
+}
+
+.hamburger-line {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0 ;
+    background-color: white;
+}
+
+.hamburger {
+    height: 20px;
+    cursor: pointer;
+}
+
+.header-title {
+    color: white;
+    text-align: center;
+}
+
+.header-links {
+    color: white;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+main {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.nav-left {
+    position: absolute;
+    top: 60px;
+    left: -240px;
+    width: 240px;
+    height: calc(100vh - 60px);
+    background-color: darkgreen;
+    transition: all 0.3s ease-out;
+}
+
+.nav-left.visible {
+    left: 0;
+}
+
+.nav-list {
+    margin: 2rem 1rem 0;
+    list-style: none;
+}
+
+.nav-list-item {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: lightgreen;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: darkgreen;
+}
