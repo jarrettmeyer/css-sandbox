@@ -1,0 +1,71 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #303030;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #090024;
+    color: #e0e0e0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 1rem 4rem;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cards {
+    margin: 0 5vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 24rem;
+    margin: 1em;
+    padding: 1rem;
+    border-radius: 1rem;
+
+
+    background: #eee;
+    color: #333;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+.card-title a {
+    color: #4b6cb7;
+}
