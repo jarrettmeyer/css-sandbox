@@ -1,0 +1,21 @@
+.toggle {
+    position: relative;
+}
+
+.toggle::after {
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    width: 0;
+    height: 0;
+
+    /* Use borders to create false carets. */
+    border-top: 8px solid;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 0;
+}

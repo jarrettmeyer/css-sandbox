@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slidedown Menu</title>
+    <link rel="stylesheet" href="./site.css">
+    <link rel="stylesheet" href="./nav-left.css">
+    <link rel="stylesheet" href="./toggle.css">
+</head>
+<body>
+
+    <main>
+        <h1>Slidedown Menu</h1>
+        <p>
+            Some navigation items are expandable.
+            Check it out to the left.
+        </p>
+    </main>
+
+    <nav class="nav-left">
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="#1">Item One</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#2">Item Two</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link toggle" href="#3">Item Three</a>
+                <ul class="nav-submenu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#3.1">Item Three.One</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#3.2">Item Three.Two</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#3.3">Item Three.Three</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link toggle" href="#4">Item Four</a>
+                <ul class="nav-submenu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#4.1">Item Four.One</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#4.2">Item Four.Two</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#5">Item Five</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="site.js"></script>
+</body>
+</html>
