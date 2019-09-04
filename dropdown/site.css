@@ -1,0 +1,134 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #333;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background: #eee;
+    color: #333;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: mediumblue;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+
+    background: #111;
+    color: #eee;
+
+    font-size: 24px;
+    line-height: 1;
+    z-index: 2;
+}
+
+.dropdown {
+    position: relative;
+    margin: 0 auto;
+    width: 16rem;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.dropdown-toggle {
+    padding: 18px 10px;
+    font-size: 24px;
+    line-height: 1;
+    display: block;
+    transition: background 0.3s ease;
+    background: inherit;
+    color: #eee;
+}
+
+.dropdown-toggle:hover {
+    background: #333;
+}
+
+.dropdown-content {
+    width: 16rem;
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    padding: 18px 10px;
+    display: block;
+    position: relative;
+    transition: background 0.3s ease;
+    background: #fff;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background: #ccc;
+}
+
+.dropdown-active {
+    display: block;
+}
+
+/* Toggle settings, for the carat. */
+
+.toggle {
+    position: relative;
+}
+
+.toggle::after {
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    transform: translate(0, -50%);
+    width: 0;
+    height: 0;
+
+    /* Use borders to create false carets. */
+    border-top: 12px solid;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 0;
+}
+
+.main-content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    min-height: calc(100vh - 60px);
+    padding: 2em;
+    z-index: 1;
+}
