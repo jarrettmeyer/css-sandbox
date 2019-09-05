@@ -6,8 +6,11 @@ const footerLinks = document.querySelectorAll(".footer-link");
 
 footerLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
-        document.querySelector(".footer-link.active").classList.remove("active");        
+        document.querySelector(".footer-link.active").classList.remove("active");
         link.classList.add("active");
     });
 });
+
+// Create filler text.
+lipsum("lorum-ipsum", 5);
 
